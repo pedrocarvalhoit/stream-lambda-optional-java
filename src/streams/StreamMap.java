@@ -19,6 +19,8 @@ public class StreamMap {
 		arrayList.stream()
 			.map(e -> e * 2)
 			.forEach(e -> System.out.println(e));
+		
+		
 			
 		
 	}

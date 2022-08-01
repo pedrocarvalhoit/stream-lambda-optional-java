@@ -16,8 +16,8 @@ public class StreamFilter {
 		
 		System.out.println("---");
 		arrayList.stream()
-		.filter(e -> e < 8 && e> 5)
-		.forEach(e -> System.out.println(e));
+			.filter(e -> e < 8 && e> 5)
+			.forEach(e -> System.out.println(e));
 		
 		
 	}

@@ -27,6 +27,14 @@ public class StreamsFuncoes {
 			//Distingue os números iguais
 			.distinct()
 			.forEach(e -> System.out.println(e));
+		
+		System.out.println("---Count");
+			//Contando o tamanho
+			long count = arrayList.stream()
+			//Filtrando e depois contando o resto
+				.filter(e -> e % 2 == 0)
+				.count();
+			System.out.println(count);
 
 	}
 }

@@ -2,6 +2,7 @@ package streams;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Stream;
 
 public class PrimeiroExemplo {
@@ -22,6 +23,10 @@ public class PrimeiroExemplo {
 			System.out.println(e);
 		});
 		
+		System.out.println("---Random");
+		Stream.generate(()-> new Random().nextInt())
+		.limit(5)
+		.forEach(System.out::println);
 		
 		
 	}
